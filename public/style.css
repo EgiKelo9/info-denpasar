@@ -1,0 +1,50 @@
+/* Tourism, Info, Service */
+.tourism,
+.info,
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tourism .icon-wrapper,
+.info .icon-wrapper,
+.service .icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 120px;
+}
+.service .icon-wrapper {margin-bottom: 150px;}
+.icon-wrapper .icon-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    gap: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.icon-wrapper .icon-content:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.icon-wrapper .icon-content .circle {
+    width: 120px;
+    height: 120px;
+    background-color: #777777;
+    border-radius: 50%;
+}
+.icon-wrapper .icon-content .circle img {
+    display: block;
+    margin: 20px auto;
+}
+.seni {transform: translateY(-20px);}
+.gender {transform: translateY(-7px);}
+.legislatif {transform: translateY(-13px);}
+.kerja, .pasar {transform: translateY(5px);}
